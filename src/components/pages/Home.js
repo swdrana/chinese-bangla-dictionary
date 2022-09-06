@@ -1,9 +1,10 @@
 import React from 'react';
+import ShowWordList from '../shared/ShowWordList';
 
 const Home = () => {
     return (
         <div>
-            Home
+            <ShowWordList/>
         </div>
     );
 };

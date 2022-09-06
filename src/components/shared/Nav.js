@@ -4,18 +4,20 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <Navbar fluid={true} rounded={true}>
-        <Navbar.Brand href="https://flowbite.com/">
+        <Link to={'/'}>
+        <Navbar.Brand>
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="mr-3 h-6 sm:h-9"
             alt="Flowbite Logo"
           />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Flowbite
+            CB Dictionary
           </span>
-        </Navbar.Brand>
+        </Navbar.Brand></Link>
+        <div className="flex justify-center items-center gap-5">
         <div className="flex md:order-2">
           <Dropdown
             arrowIcon={false}
@@ -47,7 +49,7 @@ const Nav = () => {
             Home
           </Link>
           <Link to={"/add-word"}>Add Word</Link>
-        </Navbar.Collapse>
+        </Navbar.Collapse></div>
       </Navbar>
     </div>
   );
