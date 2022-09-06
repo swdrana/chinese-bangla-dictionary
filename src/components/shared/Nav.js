@@ -43,8 +43,10 @@ const Nav = () => {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
-          <Link to={'/'} active={true}>Home</Link>
-          <Link to={'/add-word'}>Add Word</Link>
+          <Link to={"/"} active={true.toString()}>
+            Home
+          </Link>
+          <Link to={"/add-word"}>Add Word</Link>
         </Navbar.Collapse>
       </Navbar>
     </div>
